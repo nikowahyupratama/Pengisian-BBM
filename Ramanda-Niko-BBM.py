@@ -163,6 +163,29 @@ print ("==================")
 print ("  SELAMAT DATANG  ")
 print ("POM BENSIN MANAHAN")
 print ("==================")
+print ("     JENIS BBM    ")
+print ("[1] Pertamax      ")
+print ("[2] Pertamax Turbo")
+print ("[3] Pertamina DEX ")
+print ("[4] Premium       ")
+print ("[5] Pertalite     ")
+print ("[6] Dexlite       ")
+print ("[7] Bio Solar     ")
+bbm = input("Masukkan jenis BBM : ")
+    if bbm == "1" :
+        pertamax()
+    elif bbm == "2" :
+        pertamaxturbo()
+    elif bbm == "3" :
+        pertaminadex()
+    elif bbm == "4" :
+        premium()
+    elif bbm == "5" :
+        pertalite()
+    elif bbm == "6" :
+        dexlite()
+    elif bbm == "7" :
+        biosolar()
 
     
 bayar = int(input("Uang pembayaran: "))
