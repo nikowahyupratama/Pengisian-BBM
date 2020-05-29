@@ -20,49 +20,55 @@ while True:
         password = input("Masukkan Password: ")
         if password == "010":
             print("AKSES DISETUJUI")
-            break
+            awal ()
         else:
             print("AKSES DITOLAK")
+            break
     
     elif dk == "2":
         password = input("Masukkan Password: ") 
         if password == "202":
             print("AKSES DISETUJUI")
-            break
+            awal ()
         else:
             print("AKSES DITOLAK")
+            break
     
     elif dk == "3":
         password = input("Masukkan Password: ")
         if password == "330":
             print("AKSES DISETUJUI")
-            break
+            awal ()
         else:
             print("AKSES DITOLAK")
+            break
             
     elif dk == "4":
         password = input("Masukkan Password: ")
         if password == "044":
             print("AKSES DISETUJUI")
-            break
+            awal()
         else:
             print("AKSES DITOLAK")
+            break
             
     elif dk == "5":
         password = input("Masukkan Password: ")
         if password == "500":
             print("AKSES DISETUJUI")
-            break
+            awal()
         else:
             print("AKSES DITOLAK")
+            break
             
     elif dk == "6":
         password = input("Masukkan Password: ")
         if password == "006":
             print("AKSES DISETUJUI")
-            break
+            awal ()
         else:
             print("AKSES DITOLAK")
+            break
             
 metode_Pembelian=["harga", "liter"]
 
@@ -158,34 +164,38 @@ def biosolar():
         print ("Harga Rp", harga, "sejumlah", liter, "liter")
 
 time = time.ctime()
-print ("", time)
-print ("==================")
-print ("  SELAMAT DATANG  ")
-print ("POM BENSIN MANAHAN")
-print ("==================")
-print ("     JENIS BBM    ")
-print ("[1] Pertamax      ")
-print ("[2] Pertamax Turbo")
-print ("[3] Pertamina DEX ")
-print ("[4] Premium       ")
-print ("[5] Pertalite     ")
-print ("[6] Dexlite       ")
-print ("[7] Bio Solar     ")
-bbm = input("Masukkan jenis BBM : ")
-    if bbm == "1" :
-        pertamax()
-    elif bbm == "2" :
-        pertamaxturbo()
-    elif bbm == "3" :
-        pertaminadex()
-    elif bbm == "4" :
-        premium()
-    elif bbm == "5" :
-        pertalite()
-    elif bbm == "6" :
-        dexlite()
-    elif bbm == "7" :
+def awal () :
+    print ("", time)
+    print ("==================")
+    print ("  SELAMAT DATANG  ")
+    print ("   SPBU MANAHAN   ")
+    print ("==================")
+    print ("     JENIS BBM    ")
+    print ("[1] Pertamax      ")
+    print ("[2] Pertamax Turbo")
+    print ("[3] Pertamina DEX ")
+    print ("[4] Premium       ")
+    print ("[5] Pertalite     ")
+    print ("[6] Dexlite       ")
+    print ("[7] Bio Solar     ")
+    bbm = input("Masukkan jenis BBM : ")
+     if bbm == "1" :
+          pertamax()
+     elif bbm == "2" :
+         pertamaxturbo()
+      elif bbm == "3" :
+         pertaminadex()
+     elif bbm == "4" :
+         premium()
+     elif bbm == "5" :
+         pertalite()
+     elif bbm == "6" :
+         dexlite()
+     elif bbm == "7" :
         biosolar()
+     else :
+        print ("System Error")
+        break
 
     
 bayar = int(input("Uang pembayaran: "))
