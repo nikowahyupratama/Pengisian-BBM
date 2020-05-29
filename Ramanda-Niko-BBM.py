@@ -17,7 +17,7 @@ for i in range (4):
 J = int(input("Jenis BBM: "))
 
 if J == 1:
-    solar = 4500
+    solar = 9000
     for i in range (2) :
         print(i+1, metode_Pembelian[i])
     A = int(input("Metode Pembelian :"))
@@ -30,7 +30,7 @@ if J == 1:
     print ("Harga Rp", harga, "sejumlah", liter, "liter")
     
 elif J == 2:
-    premium = 5000
+    premium = 7000
     for i in range (2) :
         print(i+1, metode_Pembelian[i])
     A = int(input("Metode Pembelian :"))
@@ -43,7 +43,7 @@ elif J == 2:
     print ("Harga Rp", harga, "sejumlah", liter, "liter")
     
 elif J == 3:
-    pertalite = 7500
+    pertalite = 8000
     for i in range (2) :
         print(i+1, metode_Pembelian[i])
     A = int(input("Metode Pembelian :"))
@@ -56,7 +56,7 @@ elif J == 3:
     print ("Harga Rp", harga, "sejumlah", liter, "liter")
     
 else :
-    pertamax = 10000
+    pertamax = 12000
     for i in range (2) :
         print(i+1, metode_Pembelian[i])
     A = int(input("Metode Pembelian :"))
