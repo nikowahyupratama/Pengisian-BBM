@@ -2,6 +2,14 @@
 import math
 import time
 
+while True:
+    password = input("What is the password?")
+    if password == "pr0gk0mp2020":
+        print("AKSES DISETUJUI")
+        break
+    else: 
+        print("AKSES DITOLAK")
+
 time = time.ctime()
 print ("", time)
 print ("==================")
