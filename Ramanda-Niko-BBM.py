@@ -63,6 +63,99 @@ while True:
             break
         else:
             print("AKSES DITOLAK")
+            
+metode_Pembelian=["harga", "liter"]
+
+def pertamax():
+        Pertamax = 9000
+        for i in range (2) :
+            print(i+1, metode_Pembelian[i])
+        A = int(input("Metode Pembelian : "))
+        if A == 1:
+            harga = int(input("Nominal pembayaran: "))
+            liter = harga/Pertamax
+        else :
+            liter = int(input("Berapa liter: "))
+            harga = liter*Pertamax
+        print ("Harga Rp", harga, "sejumlah", liter, "liter")
+    
+def pertamaxturbo():
+        PertamaxTurbo = 9850
+        for i in range (2) :
+            print(i+1, metode_Pembelian[i])
+        A = int(input("Metode Pembelian :"))
+        if A == 1:
+            harga = int(input("Nominal pembayaran:"))
+            liter = harga/PertamaxTurbo
+        else :
+            liter = int(input("Berapa liter: "))
+            harga = liter*PertamaxTurbo
+        print ("Harga Rp", harga, "sejumlah", liter, "liter")
+    
+def pertaminadex():
+        PertaminaDEX = 10200
+        for i in range (2) :
+            print(i+1, metode_Pembelian[i])
+        A = int(input("Metode Pembelian :"))
+        if A == 1:
+            harga = int(input("Nominal pembayaran:"))
+            liter = harga/PertaminaDEX
+        else :
+            liter = int(input("Berapa liter: "))
+            harga = liter*PertaminaDEX
+        print ("Harga Rp", harga, "sejumlah", liter, "liter")
+            
+def premium():
+        Premium = 6450
+        for i in range (2) :
+            print(i+1, metode_Pembelian[i])
+        A = int(input("Metode Pembelian :"))
+        if A == 1:
+            harga = int(input("Nominal pembayaran:"))
+            liter = harga/Premium
+        else :
+            liter = int(input("Berapa liter: "))
+            harga = liter*Premium
+        print ("Harga Rp", harga, "sejumlah", liter, "liter")
+            
+def pertalite():
+        Pertalite = 7650
+        for i in range (2) :
+            print(i+1, metode_Pembelian[i])
+        A = int(input("Metode Pembelian :"))
+        if A == 1:
+            harga = int(input("Nominal pembayaran:"))
+            liter = harga/Pertalite
+        else :
+            liter = int(input("Berapa liter: "))
+            harga = liter*Pertalite
+        print ("Harga Rp", harga, "sejumlah", liter, "liter")
+            
+def dexlite():
+        Dexlite = 9500
+        for i in range (2) :
+            print(i+1, metode_Pembelian[i])
+        A = int(input("Metode Pembelian :"))
+        if A == 1:
+            harga = int(input("Nominal pembayaran:"))
+            liter = harga/Dexlite
+        else :
+            liter = int(input("Berapa liter: "))
+            harga = liter*Dexlite
+        print ("Harga Rp", harga, "sejumlah", liter, "liter")
+    
+def biosolar():
+        BioSolar = 9400
+        for i in range (2) :
+            print(i+1, metode_Pembelian[i])
+        A = int(input("Metode Pembelian :"))
+        if A == 1:
+            harga = int(input("Nominal pembayaran:"))
+            liter = harga/BioSolar
+        else :
+            liter = int(input("Berapa liter: "))
+            harga = liter*BioSolar
+        print ("Harga Rp", harga, "sejumlah", liter, "liter")
 
 time = time.ctime()
 print ("", time)
@@ -71,64 +164,6 @@ print ("  SELAMAT DATANG  ")
 print ("POM BENSIN MANAHAN")
 print ("==================")
 
-jenis_BBM=["Solar", "Premium", "Pertalite", "Pertamax"]
-metode_Pembelian=["harga", "liter"]
-
-for i in range (4):
-    print(i+1, jenis_BBM[i]) 
-J = int(input("Jenis BBM: "))
-
-if J == 1:
-    solar = 9000
-    for i in range (2) :
-        print(i+1, metode_Pembelian[i])
-    A = int(input("Metode Pembelian :"))
-    if A == 1:
-        harga = int(input("Nominal pembayaran:"))
-        liter = harga/solar
-    else :
-        liter = int(input("Berapa liter: "))
-        harga = liter*solar
-    print ("Harga Rp", harga, "sejumlah", liter, "liter")
-    
-elif J == 2:
-    premium = 7000
-    for i in range (2) :
-        print(i+1, metode_Pembelian[i])
-    A = int(input("Metode Pembelian :"))
-    if A == 1:
-        harga = int(input("Nominal pembayaran:"))
-        liter = harga/premium
-    else :
-        liter = int(input("Berapa liter: "))
-        harga = liter*premium
-    print ("Harga Rp", harga, "sejumlah", liter, "liter")
-    
-elif J == 3:
-    pertalite = 8000
-    for i in range (2) :
-        print(i+1, metode_Pembelian[i])
-    A = int(input("Metode Pembelian :"))
-    if A == 1:
-        harga = int(input("Nominal pembayaran:"))
-        liter = harga/pertalite
-    else :
-        liter = int(input("Berapa liter: "))
-        harga = liter*pertalite
-    print ("Harga Rp", harga, "sejumlah", liter, "liter")
-    
-else :
-    pertamax = 12000
-    for i in range (2) :
-        print(i+1, metode_Pembelian[i])
-    A = int(input("Metode Pembelian :"))
-    if A == 1:
-        harga = int(input("Nominal pembayaran:"))
-        liter = harga/pertamax
-    else :
-        liter = int(input("Berapa liter: "))
-        harga = liter*pertamax
-    print ("Harga Rp", harga, "sejumlah", liter, "liter")
     
 bayar = int(input("Uang pembayaran: "))
 kembalian = bayar-harga
