@@ -3,7 +3,7 @@ import math
 import time
 
 while True:
-    password = input("What is the password?")
+    password = input("Masukkan Password: ")
     if password == "pr0gk0mp2020":
         print("AKSES DISETUJUI")
         break
