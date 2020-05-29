@@ -2,13 +2,67 @@
 import math
 import time
 
+print("-----------------------")
+print("    Daftar Karyawan    ")
+print("-----------------------")
+print("[1] Aby                ")
+print("[2] ALifta             ")
+print("[3] Banu               ")
+print("[4] Niko               ")
+print("[5] Surya              ")
+print("[6] Yudha              ")
+
+daftar_karyawan = input("Masukkan kode karyawan: ")
+dk = daftar_karyawan
+
 while True:
-    password = input("Masukkan Password: ")
-    if password == "pr0gk0mp2020":
-        print("AKSES DISETUJUI")
-        break
-    else: 
-        print("AKSES DITOLAK")
+    if dk == "1":
+        password = input("Masukkan Password: ")
+        if password == "010":
+            print("AKSES DISETUJUI")
+            break
+        else:
+            print("AKSES DITOLAK")
+    
+    elif dk == "2":
+        password = input("Masukkan Password: ") 
+        if password == "202":
+            print("AKSES DISETUJUI")
+            break
+        else:
+            print("AKSES DITOLAK")
+    
+    elif dk == "3":
+        password = input("Masukkan Password: ")
+        if password == "330":
+            print("AKSES DISETUJUI")
+            break
+        else:
+            print("AKSES DITOLAK")
+            
+    elif dk == "4":
+        password = input("Masukkan Password: ")
+        if password == "044":
+            print("AKSES DISETUJUI")
+            break
+        else:
+            print("AKSES DITOLAK")
+            
+    elif dk == "5":
+        password = input("Masukkan Password: ")
+        if password == "500":
+            print("AKSES DISETUJUI")
+            break
+        else:
+            print("AKSES DITOLAK")
+            
+    elif dk == "6":
+        password = input("Masukkan Password: ")
+        if password == "006":
+            print("AKSES DISETUJUI")
+            break
+        else:
+            print("AKSES DITOLAK")
 
 time = time.ctime()
 print ("", time)
