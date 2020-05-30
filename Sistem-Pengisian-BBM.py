@@ -35,7 +35,7 @@ def awal () :
           pertamax()
      elif bbm == "2" :
          pertamaxturbo()
-      elif bbm == "3" :
+     elif bbm == "3" :
          pertaminadex()
      elif bbm == "4" :
          premium()
@@ -46,9 +46,9 @@ def awal () :
      elif bbm == "7" :
         biosolar()
      else :
-        print ("System Error")
-        break
-        
+        print ("Salah input, mohon input ulang!")
+        awal()
+                
 metode_Pembelian=["harga", "liter"]
 
 def pertamax():
