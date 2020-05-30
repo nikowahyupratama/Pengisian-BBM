@@ -59,9 +59,12 @@ def pertamax():
         if A == 1:
             harga = int(input("Nominal pembayaran: "))
             liter = harga/Pertamax
-        else :
+        elif A == 2:
             liter = int(input("Berapa liter: "))
             harga = liter*Pertamax
+        else :
+            print("Input salah, mohon input ulang!")
+            pertamax()
         print ("Harga Rp", harga, "sejumlah", liter, "liter")
         bayar = int(input("Uang pembayaran: "))
         kembalian = bayar-harga
@@ -79,9 +82,12 @@ def pertamaxturbo():
         if A == 1:
             harga = int(input("Nominal pembayaran:"))
             liter = harga/PertamaxTurbo
-        else :
+        elif A == 2:
             liter = int(input("Berapa liter: "))
             harga = liter*PertamaxTurbo
+        else :
+            print("Input salah, mohon input ulang!")
+            pertamaxturbo()
         print ("Harga Rp", harga, "sejumlah", liter, "liter")
         bayar = int(input("Uang pembayaran: "))
         kembalian = bayar-harga
@@ -99,9 +105,12 @@ def pertaminadex():
         if A == 1:
             harga = int(input("Nominal pembayaran:"))
             liter = harga/PertaminaDEX
-        else :
+        elif A == 2:
             liter = int(input("Berapa liter: "))
             harga = liter*PertaminaDEX
+        else :
+            print("Input salah, mohon input ulang!")
+            pertaminadex()
         print ("Harga Rp", harga, "sejumlah", liter, "liter")
         bayar = int(input("Uang pembayaran: "))
         kembalian = bayar-harga
@@ -119,9 +128,12 @@ def premium():
         if A == 1:
             harga = int(input("Nominal pembayaran:"))
             liter = harga/Premium
-        else :
+        elif A == 2:
             liter = int(input("Berapa liter: "))
             harga = liter*Premium
+        else :
+            print("Input salah, mohon input ulang!")
+            premium()
         print ("Harga Rp", harga, "sejumlah", liter, "liter")
         bayar = int(input("Uang pembayaran: "))
         kembalian = bayar-harga
@@ -139,9 +151,12 @@ def pertalite():
         if A == 1:
             harga = int(input("Nominal pembayaran:"))
             liter = harga/Pertalite
-        else :
+        elif A == 2:
             liter = int(input("Berapa liter: "))
             harga = liter*Pertalite
+        else :
+            print("Input salah, mohon input ulang!")
+            pertalite()
         print ("Harga Rp", harga, "sejumlah", liter, "liter")
         bayar = int(input("Uang pembayaran: "))
         kembalian = bayar-harga
@@ -159,9 +174,11 @@ def dexlite():
         if A == 1:
             harga = int(input("Nominal pembayaran:"))
             liter = harga/Dexlite
-        else :
+        elif A == 2:
             liter = int(input("Berapa liter: "))
             harga = liter*Dexlite
+        else :
+            print("Input salah, mohon input ulang!")
         print ("Harga Rp", harga, "sejumlah", liter, "liter")
         bayar = int(input("Uang pembayaran: "))
         kembalian = bayar-harga
@@ -179,9 +196,12 @@ def biosolar():
         if A == 1:
             harga = int(input("Nominal pembayaran:"))
             liter = harga/BioSolar
-        else :
+        elif A == 2:
             liter = int(input("Berapa liter: "))
             harga = liter*BioSolar
+        else :
+            print("Input salah, mohon input ulang!")
+            biosolar()
         print ("Harga Rp", harga, "sejumlah", liter, "liter")
         bayar = int(input("Uang pembayaran: "))
         kembalian = bayar-harga
