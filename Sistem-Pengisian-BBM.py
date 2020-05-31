@@ -1,4 +1,6 @@
 import time
+harga = 0
+liter = 0
 
 def struk():
     print ("\n")
@@ -9,7 +11,7 @@ def struk():
     print ("==================================")
     print (time)
     print ("Petugas", "\t :", petugas)
-    print ("Pengisian", "\t :", liter, "liter")
+    print ("Pengisian", "\t :", round(liter, 2), "liter")
     print ("Total Harga", "\t :", "Rp", harga) 
     bayar = int(input("Pembayaran \t \t : Rp "))
     kembalian = bayar-harga
@@ -22,6 +24,8 @@ def struk():
     
 def pertamax():
         Pertamax = 9000
+        print ("[1] Nominal Rupiah      ")
+        print ("[2] Jumlah Liter")
         A = int(input("Metode Pembelian: "))
         global harga
         global liter
@@ -39,6 +43,8 @@ def pertamax():
     
 def pertamaxturbo():
         PertamaxTurbo = 9850
+        print ("[1] Nominal Rupiah      ")
+        print ("[2] Jumlah Liter")
         A = int(input("Metode Pembelian: "))
         global harga
         global liter
@@ -56,6 +62,8 @@ def pertamaxturbo():
     
 def pertaminadex():
         PertaminaDEX = 10200
+        print ("[1] Nominal Rupiah      ")
+        print ("[2] Jumlah Liter")
         A = int(input("Metode Pembelian: "))
         global harga
         global liter
@@ -73,6 +81,8 @@ def pertaminadex():
             
 def premium():
         Premium = 6450
+        print ("[1] Nominal Rupiah      ")
+        print ("[2] Jumlah Liter")
         A = int(input("Metode Pembelian: "))
         global harga
         global liter
@@ -90,6 +100,8 @@ def premium():
             
 def pertalite():
         Pertalite = 7650
+        print ("[1] Nominal Rupiah      ")
+        print ("[2] Jumlah Liter")
         A = int(input("Metode Pembelian: "))
         global harga
         global liter
@@ -107,6 +119,8 @@ def pertalite():
             
 def dexlite():
         Dexlite = 9500
+        print ("[1] Nominal Rupiah      ")
+        print ("[2] Jumlah Liter")
         A = int(input("Metode Pembelian: "))
         global harga
         global liter
@@ -124,6 +138,8 @@ def dexlite():
     
 def biosolar():
         BioSolar = 9400
+        print ("[1] Nominal Rupiah      ")
+        print ("[2] Jumlah Liter")
         A = int(input("Metode Pembelian: "))
         global harga
         global liter
@@ -218,8 +234,7 @@ elif dk == "6":
 else :
     print("AKSES DITOLAK")
 
-harga = 0
-liter = 0
+
 time = time.ctime()
        
 while login == True:
