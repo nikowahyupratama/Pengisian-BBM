@@ -1,12 +1,149 @@
-
-import math
 import time
+
+def struk():
+    print ("\n")
+    print (time)
+    print ("==================================")
+    print ("        SELAMAT DATANG DI         ")
+    print ("           SPBU MANAHAN           ")
+    print ("==================================")
+    print (time)
+    print ("Petugas", "\t :", petugas)
+    print ("Pengisian", "\t :", liter, "liter")
+    print ("Total Harga", "\t :", "Rp", harga) 
+    bayar = int(input("Pembayaran \t \t : Rp "))
+    kembalian = bayar-harga
+    print ("Kembali ", "\t : Rp", kembalian)
+    print ("==================================")
+    print ("  TERIMA KASIH ATAS KEHADIRANNYA  ")
+    print ("   SEMOGA SELAMAT SAMPAI TUJUAN   ")
+    print ("==================================")
+
+    
+def pertamax():
+        Pertamax = 9000
+        A = int(input("Metode Pembelian: "))
+        global harga
+        global liter
+        if A == 1:
+            harga = int(input("Nominal pembayaran: "))
+            liter = harga/Pertamax
+            struk()
+        elif A == 2:
+            liter = int(input("Berapa liter: "))
+            harga = liter*Pertamax
+            struk()
+        else :
+            print("Input salah, mohon input ulang!")
+            pertamax()
+    
+def pertamaxturbo():
+        PertamaxTurbo = 9850
+        A = int(input("Metode Pembelian: "))
+        global harga
+        global liter
+        if A == 1:
+            harga = int(input("Nominal pembayaran: "))
+            liter = harga/PertamaxTurbo
+            struk()
+        elif A == 2:
+            liter = int(input("Berapa liter: "))
+            harga = liter*PertamaxTurbo
+            struk()
+        else :
+            print("Input salah, mohon input ulang!")
+            pertamaxturbo()
+    
+def pertaminadex():
+        PertaminaDEX = 10200
+        A = int(input("Metode Pembelian: "))
+        global harga
+        global liter
+        if A == 1:
+            harga = int(input("Nominal pembayaran: "))
+            liter = harga/PertaminaDEX
+            struk()
+        elif A == 2:
+            liter = int(input("Berapa liter: "))
+            harga = liter*PertaminaDEX
+            struk()
+        else :
+            print("Input salah, mohon input ulang!")
+            pertaminadex()
+            
+def premium():
+        Premium = 6450
+        A = int(input("Metode Pembelian: "))
+        global harga
+        global liter
+        if A == 1:
+            harga = int(input("Nominal pembayaran: "))
+            liter = harga/Premium
+            struk()
+        elif A == 2:
+            liter = int(input("Berapa liter: "))
+            harga = liter*Premium
+            struk()
+        else :
+            print("Input salah, mohon input ulang!")
+            premium()
+            
+def pertalite():
+        Pertalite = 7650
+        A = int(input("Metode Pembelian: "))
+        global harga
+        global liter
+        if A == 1:
+            harga = int(input("Nominal pembayaran: "))
+            liter = harga/Pertalite
+            struk()
+        elif A == 2:
+            liter = int(input("Berapa liter: "))
+            harga = liter*Pertalite
+            struk()
+        else :
+            print("Input salah, mohon input ulang!")
+            pertalite()
+            
+def dexlite():
+        Dexlite = 9500
+        A = int(input("Metode Pembelian: "))
+        global harga
+        global liter
+        if A == 1:
+            harga = int(input("Nominal pembayaran: "))
+            liter = harga/Dexlite
+            struk()
+        elif A == 2:
+            liter = int(input("Berapa liter: "))
+            harga = liter*Dexlite
+            struk()
+        else :
+            print("Input salah, mohon input ulang!")
+            dexlite()
+    
+def biosolar():
+        BioSolar = 9400
+        A = int(input("Metode Pembelian: "))
+        global harga
+        global liter
+        if A == 1:
+            harga = int(input("Nominal pembayaran: "))
+            liter = harga/BioSolar
+            struk()
+        elif A == 2:
+            liter = int(input("Berapa liter: "))
+            harga = liter*BioSolar
+            struk()
+        else :
+            print("Input salah, mohon input ulang!")
+            biosolar()
 
 print("-----------------------")
 print("    Daftar Karyawan    ")
 print("-----------------------")
 print("[1] Aby                ")
-print("[2] ALifta             ")
+print("[2] Alifta             ")
 print("[3] Banu               ")
 print("[4] Niko               ")
 print("[5] Surya              ")
@@ -14,15 +151,83 @@ print("[6] Yudha              ")
 
 daftar_karyawan = input("Masukkan kode karyawan: ")
 dk = daftar_karyawan
+if dk == "1":
+    password = input("Masukkan Password: ")
+    if password == "010":
+        print("AKSES DISETUJUI")
+        print("\n")
+        petugas = "Aby"
+        login = True
+    else:
+        print("AKSES DITOLAK")
+        login = False
+elif dk == "2":
+    password = input("Masukkan Password: ") 
+    if password == "202":
+        print("AKSES DISETUJUI")
+        print("\n")
+        petugas = "Alifta"
+        login = True
+    else:
+        print("AKSES DITOLAK")
+        login = False
+    
+elif dk == "3":
+    password = input("Masukkan Password: ")
+    if password == "330":
+        print("AKSES DISETUJUI")
+        print("\n")
+        petugas = "Banu"
+        login = True
+    else:
+        print("AKSES DITOLAK")
+        login = False
+            
+elif dk == "4":
+    password = input("Masukkan Password: ")
+    if password == "044":
+        print("AKSES DISETUJUI")
+        print("\n")
+        petugas = "Niko"
+        login = True
+    else:
+        print("AKSES DITOLAK")
+        login = False
+            
+elif dk == "5":
+    password = input("Masukkan Password: ")
+    if password == "500":
+        print("AKSES DISETUJUI")
+        print("\n")
+        petugas = "Surya"
+        login = True
+    else:
+        print("AKSES DITOLAK")
+        login = False
+            
+elif dk == "6":
+    password = input("Masukkan Password: ")
+    if password == "006":
+        print("AKSES DISETUJUI")
+        print("\n")
+        petugas = "Yudha"
+        login = True
+    else:
+        print("AKSES DITOLAK")
+        login = False
+else :
+    print("AKSES DITOLAK")
 
+harga = 0
+liter = 0
 time = time.ctime()
-def awal () :
-    print ("", time)
-    print ("==================")
-    print (" SELAMAT DATANG DI ")
-    print ("   SPBU MANAHAN   ")
-    print ("==================")
-    print ("     JENIS BBM    ")
+       
+while login == True:
+    print ("=========================")
+    print ("    SELAMAT BERTUGAS     ")
+    print ("    DI SPBU MANAHAN!     ")
+    print ("=========================")
+    print ("          MENU           ")
     print ("[1] Pertamax      ")
     print ("[2] Pertamax Turbo")
     print ("[3] Pertamina DEX ")
@@ -30,240 +235,28 @@ def awal () :
     print ("[5] Pertalite     ")
     print ("[6] Dexlite       ")
     print ("[7] Bio Solar     ")
-    bbm = input("Masukkan jenis BBM : ")
-     if bbm == "1" :
-          pertamax()
-     elif bbm == "2" :
-         pertamaxturbo()
-     elif bbm == "3" :
-         pertaminadex()
-     elif bbm == "4" :
-         premium()
-     elif bbm == "5" :
-         pertalite()
-     elif bbm == "6" :
-         dexlite()
-     elif bbm == "7" :
+    print ("[8] Keluar Dari Aplikasi")
+    bbm = input("Masukkan Pilihan: ")
+    if bbm == "1" :
+        pertamax()
+    elif bbm == "2" :
+        pertamaxturbo()
+    elif bbm == "3" :
+        pertaminadex()
+    elif bbm == "4" :
+        premium()
+    elif bbm == "5" :
+        pertalite()
+    elif bbm == "6" :
+        dexlite()
+    elif bbm == "7" :
         biosolar()
-     else :
+    elif bbm == "8" :
+        break
+    else :
         print ("Salah input, mohon input ulang!")
-        awal()
-                
-metode_Pembelian=["harga", "liter"]
-
-def pertamax():
-        Pertamax = 9000
-        for i in range (2) :
-            print(i+1, metode_Pembelian[i])
-        A = int(input("Metode Pembelian : "))
-        if A == 1:
-            harga = int(input("Nominal pembayaran: "))
-            liter = harga/Pertamax
-        elif A == 2:
-            liter = int(input("Berapa liter: "))
-            harga = liter*Pertamax
-        else :
-            print("Input salah, mohon input ulang!")
-            pertamax()
-        print ("Harga Rp", harga, "sejumlah", liter, "liter")
-        bayar = int(input("Uang pembayaran: "))
-        kembalian = bayar-harga
-        print ("kembalian :", kembalian)
-        print ("==================================")
-        print ("  TERIMA KASIH ATAS KEHADIRANNYA  ")
-        print ("   SEMOGA SELAMAT SAMPAI TUJUAN   ")
-        print ("==================================")
-    
-def pertamaxturbo():
-        PertamaxTurbo = 9850
-        for i in range (2) :
-            print(i+1, metode_Pembelian[i])
-        A = int(input("Metode Pembelian :"))
-        if A == 1:
-            harga = int(input("Nominal pembayaran:"))
-            liter = harga/PertamaxTurbo
-        elif A == 2:
-            liter = int(input("Berapa liter: "))
-            harga = liter*PertamaxTurbo
-        else :
-            print("Input salah, mohon input ulang!")
-            pertamaxturbo()
-        print ("Harga Rp", harga, "sejumlah", liter, "liter")
-        bayar = int(input("Uang pembayaran: "))
-        kembalian = bayar-harga
-        print ("kembalian :", kembalian)
-        print ("==================================")
-        print ("  TERIMA KASIH ATAS KEHADIRANNYA  ")
-        print ("   SEMOGA SELAMAT SAMPAI TUJUAN   ")
-        print ("==================================")
-    
-def pertaminadex():
-        PertaminaDEX = 10200
-        for i in range (2) :
-            print(i+1, metode_Pembelian[i])
-        A = int(input("Metode Pembelian :"))
-        if A == 1:
-            harga = int(input("Nominal pembayaran:"))
-            liter = harga/PertaminaDEX
-        elif A == 2:
-            liter = int(input("Berapa liter: "))
-            harga = liter*PertaminaDEX
-        else :
-            print("Input salah, mohon input ulang!")
-            pertaminadex()
-        print ("Harga Rp", harga, "sejumlah", liter, "liter")
-        bayar = int(input("Uang pembayaran: "))
-        kembalian = bayar-harga
-        print ("kembalian :", kembalian)
-        print ("==================================")
-        print ("  TERIMA KASIH ATAS KEHADIRANNYA  ")
-        print ("   SEMOGA SELAMAT SAMPAI TUJUAN   ")
-        print ("==================================")
-            
-def premium():
-        Premium = 6450
-        for i in range (2) :
-            print(i+1, metode_Pembelian[i])
-        A = int(input("Metode Pembelian :"))
-        if A == 1:
-            harga = int(input("Nominal pembayaran:"))
-            liter = harga/Premium
-        elif A == 2:
-            liter = int(input("Berapa liter: "))
-            harga = liter*Premium
-        else :
-            print("Input salah, mohon input ulang!")
-            premium()
-        print ("Harga Rp", harga, "sejumlah", liter, "liter")
-        bayar = int(input("Uang pembayaran: "))
-        kembalian = bayar-harga
-        print ("kembalian :", kembalian)
-        print ("==================================")
-        print ("  TERIMA KASIH ATAS KEHADIRANNYA  ")
-        print ("   SEMOGA SELAMAT SAMPAI TUJUAN   ")
-        print ("==================================")
-            
-def pertalite():
-        Pertalite = 7650
-        for i in range (2) :
-            print(i+1, metode_Pembelian[i])
-        A = int(input("Metode Pembelian :"))
-        if A == 1:
-            harga = int(input("Nominal pembayaran:"))
-            liter = harga/Pertalite
-        elif A == 2:
-            liter = int(input("Berapa liter: "))
-            harga = liter*Pertalite
-        else :
-            print("Input salah, mohon input ulang!")
-            pertalite()
-        print ("Harga Rp", harga, "sejumlah", liter, "liter")
-        bayar = int(input("Uang pembayaran: "))
-        kembalian = bayar-harga
-        print ("kembalian :", kembalian)
-        print ("==================================")
-        print ("  TERIMA KASIH ATAS KEHADIRANNYA  ")
-        print ("   SEMOGA SELAMAT SAMPAI TUJUAN   ")
-        print ("==================================")
-            
-def dexlite():
-        Dexlite = 9500
-        for i in range (2) :
-            print(i+1, metode_Pembelian[i])
-        A = int(input("Metode Pembelian :"))
-        if A == 1:
-            harga = int(input("Nominal pembayaran:"))
-            liter = harga/Dexlite
-        elif A == 2:
-            liter = int(input("Berapa liter: "))
-            harga = liter*Dexlite
-        else :
-            print("Input salah, mohon input ulang!")
-        print ("Harga Rp", harga, "sejumlah", liter, "liter")
-        bayar = int(input("Uang pembayaran: "))
-        kembalian = bayar-harga
-        print ("kembalian :", kembalian)
-        print ("==================================")
-        print ("  TERIMA KASIH ATAS KEHADIRANNYA  ")
-        print ("   SEMOGA SELAMAT SAMPAI TUJUAN   ")
-        print ("==================================")
-    
-def biosolar():
-        BioSolar = 9400
-        for i in range (2) :
-            print(i+1, metode_Pembelian[i])
-        A = int(input("Metode Pembelian :"))
-        if A == 1:
-            harga = int(input("Nominal pembayaran:"))
-            liter = harga/BioSolar
-        elif A == 2:
-            liter = int(input("Berapa liter: "))
-            harga = liter*BioSolar
-        else :
-            print("Input salah, mohon input ulang!")
-            biosolar()
-        print ("Harga Rp", harga, "sejumlah", liter, "liter")
-        bayar = int(input("Uang pembayaran: "))
-        kembalian = bayar-harga
-        print ("kembalian :", kembalian)
-        print ("==================================")
-        print ("  TERIMA KASIH ATAS KEHADIRANNYA  ")
-        print ("   SEMOGA SELAMAT SAMPAI TUJUAN   ")
-        print ("==================================")
+        print ("\n")
+        login = True
 
 
-while True:
-    if dk == "1":
-        password = input("Masukkan Password: ")
-        if password == "010":
-            print("AKSES DISETUJUI")
-            awal ()
-        else:
-            print("AKSES DITOLAK")
-            break
-    
-    elif dk == "2":
-        password = input("Masukkan Password: ") 
-        if password == "202":
-            print("AKSES DISETUJUI")
-            awal ()
-        else:
-            print("AKSES DITOLAK")
-            break
-    
-    elif dk == "3":
-        password = input("Masukkan Password: ")
-        if password == "330":
-            print("AKSES DISETUJUI")
-            awal ()
-        else:
-            print("AKSES DITOLAK")
-            break
-            
-    elif dk == "4":
-        password = input("Masukkan Password: ")
-        if password == "044":
-            print("AKSES DISETUJUI")
-            awal()
-        else:
-            print("AKSES DITOLAK")
-            break
-            
-    elif dk == "5":
-        password = input("Masukkan Password: ")
-        if password == "500":
-            print("AKSES DISETUJUI")
-            awal()
-        else:
-            print("AKSES DITOLAK")
-            break
-            
-    elif dk == "6":
-        password = input("Masukkan Password: ")
-        if password == "006":
-            print("AKSES DISETUJUI")
-            awal ()
-        else:
-            print("AKSES DITOLAK")
-            break
             
