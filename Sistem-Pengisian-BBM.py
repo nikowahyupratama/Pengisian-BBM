@@ -1,6 +1,11 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Fri May 29 13:04:17 2020
+
+@author: ASUS
+"""
+
 import time
-harga = 0
-liter = 0
 
 def struk():
     print ("\n")
@@ -12,6 +17,7 @@ def struk():
     print (time)
     print ("Petugas", "\t :", petugas)
     print ("Pengisian", "\t :", round(liter, 2), "liter")
+    print ("Jenis bbm", "\t :" , bbm)
     print ("Total Harga", "\t :", "Rp", harga) 
     bayar = int(input("Pembayaran \t \t : Rp "))
     kembalian = bayar-harga
@@ -20,8 +26,7 @@ def struk():
     print ("  TERIMA KASIH ATAS KEHADIRANNYA  ")
     print ("   SEMOGA SELAMAT SAMPAI TUJUAN   ")
     print ("==================================")
-
-    
+  
 def pertamax():
         Pertamax = 9000
         print ("[1] Nominal Rupiah      ")
@@ -187,7 +192,6 @@ elif dk == "2":
     else:
         print("AKSES DITOLAK")
         login = False
-    
 elif dk == "3":
     password = input("Masukkan Password: ")
     if password == "330":
@@ -197,8 +201,7 @@ elif dk == "3":
         login = True
     else:
         print("AKSES DITOLAK")
-        login = False
-            
+        login = False        
 elif dk == "4":
     password = input("Masukkan Password: ")
     if password == "044":
@@ -208,8 +211,7 @@ elif dk == "4":
         login = True
     else:
         print("AKSES DITOLAK")
-        login = False
-            
+        login = False     
 elif dk == "5":
     password = input("Masukkan Password: ")
     if password == "500":
@@ -219,8 +221,7 @@ elif dk == "5":
         login = True
     else:
         print("AKSES DITOLAK")
-        login = False
-            
+        login = False        
 elif dk == "6":
     password = input("Masukkan Password: ")
     if password == "006":
@@ -234,9 +235,11 @@ elif dk == "6":
 else :
     print("AKSES DITOLAK")
 
-
 time = time.ctime()
-       
+
+harga = 0
+liter = 0   
+
 while login == True:
     print ("=========================")
     print ("    SELAMAT BERTUGAS     ")
@@ -253,18 +256,25 @@ while login == True:
     print ("[8] Keluar Dari Aplikasi")
     bbm = input("Masukkan Pilihan: ")
     if bbm == "1" :
+        bbm = "pertamax"
         pertamax()
     elif bbm == "2" :
+        bbm = "pertamaxturbo"
         pertamaxturbo()
     elif bbm == "3" :
+        bbm = "pertaminadex"
         pertaminadex()
     elif bbm == "4" :
+        bbm = "premium"
         premium()
     elif bbm == "5" :
+        bbm = "pertalite"
         pertalite()
     elif bbm == "6" :
+        bbm = "dexlite"
         dexlite()
     elif bbm == "7" :
+        bbm = "biosolar"
         biosolar()
     elif bbm == "8" :
         break
@@ -272,6 +282,3 @@ while login == True:
         print ("Salah input, mohon input ulang!")
         print ("\n")
         login = True
-
-
-            
