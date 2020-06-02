@@ -12,6 +12,7 @@ Mulai
   4. Memilih metode pembelian dengan nominal angka atau jumlah liter
   
       -Jika memilih liter, selanjutnya akan mengisi dengan berapa liter yang diinginkan untuk mengisi
+      
       -Jika memilih nominal angka, selanjutnya akan mengisi dengan berapa rupiah yang diinginkan untuk mengisi
     
    5. Lalu, mengisi uang yang akan dibayarkan 
