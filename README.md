@@ -6,7 +6,7 @@ Penjelasan Program
 
 Mulai
   1. Pemilihan untuk nama Karyawan
-  2. Pemilihan password yang berbeda atas masing-masing karyawan
+  2. Pengisian password atas masing-masing karyawan
   3. Memilih jenis bahan bakar minyak yang sesuai dengan kebutuhan 
      (Pertamax, Pertamax Turbo, Pertamina DEX, Premium, Pertalite, Dexlite, Bio Solar,
   4. Memilih metode pembelian dengan nominal angka atau jumlah liter
