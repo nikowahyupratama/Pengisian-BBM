@@ -21,3 +21,6 @@ File "README.md"
 File "Sistem-Pengisian-BBM"
   Merupakan program sistem pengisian BBM
 </pre>
+# System Requirement
+- Windows or Linux/Mac operation system
+- Python 3
