@@ -21,6 +21,16 @@ File "README.md"
 File "Sistem-Pengisian-BBM"
   Merupakan program sistem pengisian BBM
 </pre>
+
 # System Requirement
 - Windows or Linux/Mac operation system
 - Python 3
+
+# Penjelasan Program Singkat
+Mulai
+1. Pemilihan nama Karyawan
+2. Memasukkan password karywan
+3. Memilih jenis bahan bakar minyak sesuai permintaan pelanggan
+4. Memilih metode pembelian dengan nominal harga atau dengan jumlah liter
+5. Mengisi nominal uang yang dibayarkan pelanggan
+6. muncul struk pembelian bahan bakar minyak yang berisi data tentang nama petugas, banyak liter pengisian, jenis bahan bakar minyak, total harga, nominal pembayaran, dan nominal kembalian.
