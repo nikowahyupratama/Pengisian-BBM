@@ -28,9 +28,11 @@ File "Sistem-Pengisian-BBM"
 
 # Penjelasan Program Singkat
 Mulai
-1. Pemilihan nama Karyawan
-2. Memasukkan password karywan
+1. Pemilihan nama petugas
+2. Memasukkan password petugas
 3. Memilih jenis bahan bakar minyak sesuai permintaan pelanggan
 4. Memilih metode pembelian dengan nominal harga atau dengan jumlah liter
 5. Mengisi nominal uang yang dibayarkan pelanggan
-6. muncul struk pembelian bahan bakar minyak yang berisi data tentang nama petugas, banyak liter pengisian, jenis bahan bakar minyak, total harga, nominal pembayaran, dan nominal kembalian.
+6. Muncul struk pembelian bahan bakar minyak yang berisi data tentang nama petugas, banyak liter pengisian, jenis bahan bakar minyak, total harga, nominal pembayaran, dan nominal kembalian
+7. Setelah selesai satu transaksi maka program akan kembali menampilakn pemilihan jenis bahan bakar minyak untuk pelanggan selanjutnya
+8 jika terjadi pergantian petugas maka dapat memilih opsi untuk keluar program lalu login dengan nama petugas dan password yang akan bekerja.
