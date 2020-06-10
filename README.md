@@ -36,3 +36,4 @@ Mulai
 6. Muncul struk pembelian bahan bakar minyak yang berisi data tentang nama petugas, banyak liter pengisian, jenis bahan bakar minyak, total harga, nominal pembayaran, dan nominal kembalian
 7. Setelah selesai satu transaksi maka program akan kembali menampilakn pemilihan jenis bahan bakar minyak untuk pelanggan selanjutnya
 8 jika terjadi pergantian petugas maka dapat memilih opsi untuk keluar program lalu login dengan nama petugas dan password yang akan bekerja.
+selesai
