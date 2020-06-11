@@ -1,6 +1,9 @@
 # Pengisian-BBM
 UAS Prokom kelas C kelompok 1
+Program ini dibuat untuk memberikan kemudahan bagi karyawan untuk pengoperasian pengisian BBM guna menentukan harga maupun jumlah liter yang diperlukan
+program inspirasi didapat dari https://www.academia.edu/37995662/BAHASA_C_PADA_APLIKASI_KASIR_POM_BENSIN_MENGGUNAKAN_CODE_BLOCK
 
+# Repository
 Repository ini ditujukan untuk Ujian Akhir Semester Mata Kuliah Program Komputer 2020
 <pre>
 File "Flowchart Pengisian BBM"
