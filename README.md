@@ -24,6 +24,9 @@ File "README.md"
   
 File "Sistem-Pengisian-BBM"
   Merupakan program sistem pengisian BBM
+  
+File "bbm.csv"
+  Berisi harga dari bahan bakar minyak
 </pre>
 
 # System Requirement
