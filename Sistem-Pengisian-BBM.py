@@ -1,11 +1,5 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri May 29 13:04:17 2020
-
-@author: ASUS
-"""
-
 import time
+import pandas as pd
 
 def struk():
     print ("\n")
@@ -26,140 +20,90 @@ def struk():
     print ("  TERIMA KASIH ATAS KEHADIRANNYA  ")
     print ("   SEMOGA SELAMAT SAMPAI TUJUAN   ")
     print ("==================================")
-  
-def pertamax():
-        Pertamax = 9000
-        print ("[1] Nominal Rupiah      ")
-        print ("[2] Jumlah Liter")
-        A = int(input("Metode Pembelian: "))
-        global harga
-        global liter
-        if A == 1:
-            harga = int(input("Nominal pembayaran: "))
-            liter = harga/Pertamax
-            struk()
-        elif A == 2:
-            liter = int(input("Berapa liter: "))
-            harga = liter*Pertamax
-            struk()
-        else :
-            print("Input salah, mohon input ulang!")
-            pertamax()
     
-def pertamaxturbo():
-        PertamaxTurbo = 9850
-        print ("[1] Nominal Rupiah      ")
-        print ("[2] Jumlah Liter")
-        A = int(input("Metode Pembelian: "))
-        global harga
-        global liter
-        if A == 1:
-            harga = int(input("Nominal pembayaran: "))
-            liter = harga/PertamaxTurbo
-            struk()
-        elif A == 2:
-            liter = int(input("Berapa liter: "))
-            harga = liter*PertamaxTurbo
-            struk()
-        else :
-            print("Input salah, mohon input ulang!")
-            pertamaxturbo()
+def transaksi():
+    df = pd.read_csv("bbm.csv")
+    print ("[1] Nominal Rupiah      ")
+    print ("[2] Jumlah Liter")
+    A = int(input("Metode Pembelian: "))
+    global nominal
+    nominal = df["Harga"][row]
+    global harga
+    global liter
+    if A == 1:
+        harga = int(input("Nominal pembayaran: "))
+        liter = harga/nominal
+        struk()
+    elif A == 2:
+        liter = int(input("Berapa liter: "))
+        harga = liter*nominal
+        struk()
+    else :
+        print("Input salah, mohon input ulang!")
+        transaksi()
+        
+def report():
+    ini = pd.DataFrame(laporan)
+    ini = ini[['Petugas', 'BBM', 'Harga/L',
+               'Total Keluar(L)', 'Total Transaksi']]
+    print('\n')
+    print('LAPORAN TRANSAKSI')
+    print("=================")
+    print(ini)
+    final = ini[['Total Keluar(L)', 'Total Transaksi']]
+    ffinal = final.sum(axis = 0)
+    print('\n')
+    print('TOTAL KESELURUHAN TRANSAKSI')
+    print("===========================")
+    print(ffinal)
     
-def pertaminadex():
-        PertaminaDEX = 10200
-        print ("[1] Nominal Rupiah      ")
-        print ("[2] Jumlah Liter")
-        A = int(input("Metode Pembelian: "))
-        global harga
-        global liter
-        if A == 1:
-            harga = int(input("Nominal pembayaran: "))
-            liter = harga/PertaminaDEX
-            struk()
-        elif A == 2:
-            liter = int(input("Berapa liter: "))
-            harga = liter*PertaminaDEX
-            struk()
-        else :
-            print("Input salah, mohon input ulang!")
-            pertaminadex()
-            
-def premium():
-        Premium = 6450
-        print ("[1] Nominal Rupiah      ")
-        print ("[2] Jumlah Liter")
-        A = int(input("Metode Pembelian: "))
-        global harga
-        global liter
-        if A == 1:
-            harga = int(input("Nominal pembayaran: "))
-            liter = harga/Premium
-            struk()
-        elif A == 2:
-            liter = int(input("Berapa liter: "))
-            harga = liter*Premium
-            struk()
-        else :
-            print("Input salah, mohon input ulang!")
-            premium()
-            
-def pertalite():
-        Pertalite = 7650
-        print ("[1] Nominal Rupiah      ")
-        print ("[2] Jumlah Liter")
-        A = int(input("Metode Pembelian: "))
-        global harga
-        global liter
-        if A == 1:
-            harga = int(input("Nominal pembayaran: "))
-            liter = harga/Pertalite
-            struk()
-        elif A == 2:
-            liter = int(input("Berapa liter: "))
-            harga = liter*Pertalite
-            struk()
-        else :
-            print("Input salah, mohon input ulang!")
-            pertalite()
-            
-def dexlite():
-        Dexlite = 9500
-        print ("[1] Nominal Rupiah      ")
-        print ("[2] Jumlah Liter")
-        A = int(input("Metode Pembelian: "))
-        global harga
-        global liter
-        if A == 1:
-            harga = int(input("Nominal pembayaran: "))
-            liter = harga/Dexlite
-            struk()
-        elif A == 2:
-            liter = int(input("Berapa liter: "))
-            harga = liter*Dexlite
-            struk()
-        else :
-            print("Input salah, mohon input ulang!")
-            dexlite()
+def updateharga() :
+    print ("==================================")
+    print ("         UPDATE HARGA BBM         ")
+    print ("==================================")
+    print ("[1] Pertamax      ")
+    print ("[2] Pertamax Turbo")
+    print ("[3] Pertamina DEX ")
+    print ("[4] Premium       ")
+    print ("[5] Pertalite     ")
+    print ("[6] Dexlite       ")
+    print ("[7] Bio Solar     ")
+    bbm = input("Masukkan Pilihan: ")
+    hbaru = input("Masukkan Harga Baru: ")
+    if bbm == "1" :
+        bbm = "Pertamax"
+        row = 0
+    elif bbm == "2" :
+        bbm = "Pertamax Turbo"
+        row = 1
+    elif bbm == "3" :
+        bbm = "Pertamina Dex"
+        row = 2
+    elif bbm == "4" :
+        bbm = "Premium"
+        row = 3
+    elif bbm == "5" :
+        bbm = "Pertalite"
+        row = 4
+    elif bbm == "6" :
+        bbm = "Dexlite"
+        row = 5
+    elif bbm == "7" :
+        bbm = "Bio Solar"
+        row = 6
     
-def biosolar():
-        BioSolar = 9400
-        print ("[1] Nominal Rupiah      ")
-        print ("[2] Jumlah Liter")
-        A = int(input("Metode Pembelian: "))
-        global harga
-        global liter
-        if A == 1:
-            harga = int(input("Nominal pembayaran: "))
-            liter = harga/BioSolar
-            struk()
-        elif A == 2:
-            liter = int(input("Berapa liter: "))
-            harga = liter*BioSolar
-            struk()
-        else :
-            print("Input salah, mohon input ulang!")
-            biosolar()
+    df = pd.read_csv("bbm.csv")
+    
+    df.at[row] = bbm , hbaru
+    df.to_csv("bbm.csv", index=False)
+    print('\n')
+    print("DAFTAR HARGA BBM TERBARU")
+    print("========================")
+    print(df)
+    global login
+    login = True
 
+  
 print("-----------------------")
 print("    Daftar Karyawan    ")
 print("-----------------------")
@@ -169,7 +113,6 @@ print("[3] Banu               ")
 print("[4] Niko               ")
 print("[5] Surya              ")
 print("[6] Yudha              ")
-
 daftar_karyawan = input("Masukkan kode karyawan: ")
 dk = daftar_karyawan
 if dk == "1":
@@ -236,9 +179,10 @@ else :
     print("AKSES DITOLAK")
 
 time = time.ctime()
-
 harga = 0
 liter = 0   
+row = 0
+laporan = []
 
 while login == True:
     print ("=========================")
@@ -253,32 +197,47 @@ while login == True:
     print ("[5] Pertalite     ")
     print ("[6] Dexlite       ")
     print ("[7] Bio Solar     ")
-    print ("[8] Keluar Dari Aplikasi")
+    print ("[8] Update Harga")
+    print ("[9] Keluar Aplikasi (Belum ada Transaksi)")
+    print ("[10] Keluar Aplikasi (Sudah ada transaksi)")
+    print ("PERINGATAN: bila memilih [0] tetapi belum ada transaksi, maka akan terjadi error")
+    global bbm
     bbm = input("Masukkan Pilihan: ")
     if bbm == "1" :
-        bbm = "pertamax"
-        pertamax()
+        bbm = "Pertamax"
+        row = 0
+        transaksi()
     elif bbm == "2" :
-        bbm = "pertamaxturbo"
-        pertamaxturbo()
+        bbm = "Pertamax Turbo"
+        row = 1
+        transaksi()
     elif bbm == "3" :
-        bbm = "pertaminadex"
-        pertaminadex()
+        bbm = "Pertamina Dex"
+        row = 2
+        transaksi()
     elif bbm == "4" :
-        bbm = "premium"
-        premium()
+        bbm = "Premium"
+        row = 3
+        transaksi()
     elif bbm == "5" :
-        bbm = "pertalite"
-        pertalite()
+        bbm = "Pertalite"
+        row = 4
+        transaksi()
     elif bbm == "6" :
-        bbm = "dexlite"
-        dexlite()
+        bbm = "Dexlite"
+        row = 5
+        transaksi()
     elif bbm == "7" :
-        bbm = "biosolar"
-        biosolar()
+        bbm = "Bio Solar"
+        row = 6
+        transaksi()
     elif bbm == "8" :
+        updateharga()
+    elif bbm == "9" :
+        break
+    elif bbm == "0" :
+        report()
         break
     else :
         print ("Salah input, mohon input ulang!")
-        print ("\n")
         login = True
