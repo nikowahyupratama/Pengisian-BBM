@@ -32,6 +32,8 @@ File "bbm.csv"
 # System Requirement
 - Windows or Linux/Mac operation system
 - Python 3
+- Pandas
+- Download "bbm.csv" pada repository
 
 # Penjelasan Program Singkat
 Mulai
