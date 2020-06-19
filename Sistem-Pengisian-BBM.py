@@ -207,7 +207,7 @@ while login == True:
     print ("[7] Bio Solar     ")
     print ("[8] Update Harga")
     print ("[9] Keluar Aplikasi (Belum ada Transaksi)")
-    print ("[10] Keluar Aplikasi (Sudah ada transaksi)")
+    print ("[0] Keluar Aplikasi (Sudah ada transaksi)")
     print ("PERINGATAN: bila memilih [0] tetapi belum ada transaksi, maka akan terjadi error")
     global bbm
     bbm = input("Masukkan Pilihan: ")
