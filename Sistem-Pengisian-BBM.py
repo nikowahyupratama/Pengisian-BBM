@@ -20,6 +20,14 @@ def struk():
     print ("  TERIMA KASIH ATAS KEHADIRANNYA  ")
     print ("   SEMOGA SELAMAT SAMPAI TUJUAN   ")
     print ("==================================")
+    print ('\n')
+    lp = {}
+    lp['Petugas'] = petugas
+    lp['BBM'] = bbm
+    lp['Harga/L'] = nominal
+    lp['Total Keluar(L)'] = round(liter, 2)
+    lp['Total Transaksi'] = harga
+    laporan.append(lp)
     
 def transaksi():
     df = pd.read_csv("bbm.csv")
